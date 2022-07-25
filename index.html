@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <title>Perfil</title>
+    <meta charset="utf-8">
     <meta name="description" content="Roughly 155 characters">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="C:/Users/ahuma/Desktop/Juegos/maxi/diseño web/arg programa/modulos/DW-estatico1/boostrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="C:/Users/ahuma/Desktop/Juegos/maxi/diseño web/arg programa/modulos/DW-estatico1/boostrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="C:/Users/ahuma/Desktop/Juegos/maxi/diseño web/arg programa/modulos/DW-estatico1/boostrap/js/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/9f1b0cbecc.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
@@ -15,7 +18,6 @@
     <div id="profile-background"><img src="https://www.10wallpaper.com/wallpaper/1366x768/1705/Cities_Architecture_HD_Photography_Wallpaper_14_1366x768.jpg" alt="Foto de portada"></div>
     <div id="info" style="padding: 16px">
         <div class="profile-image"><img src="https://scontent.fcor2-2.fna.fbcdn.net/v/t1.6435-9/79936334_1853620964774118_1862480312706007040_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_3cBy4Ie17EAX_7Lnla&_nc_ht=scontent.fcor2-2.fna&oh=00_AT_3ZbPKl9hcYkEe71bgx5KXYHWktQBwbcXTxwx-fnmWRA&oe=62F094E8" alt="Foto de perfil"></div>
-        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
         <div id="info-data">
             <h1 class="name">Ahumada Maximiliano Jose Abel</h1>
             <div id="info-company">Web Developer and Architecture Student</div>
@@ -24,14 +26,18 @@
                 <span><a href="#">info contact</a></span>
             </div>
         </div>
+        <div id="editar" onclick="cambiar_perfil()"><span><a href="#"><i class="fa-solid fa-pen"></i></a></span></div>
+        <div id="EP">
+            <span>Estudios Previos</span>
+        </div>
         <ul id="info-details">
-            <li><a href="#" class="foto1">
+            <li><a href="#">
                 <img src="https://yt3.ggpht.com/9upo5zbtXzvItj8IMHF1X9hI95x4YOeGCApLk1DhMQCHftmJvf2GWmbJXrC1TKCrn-AyQ2txBw=s900-c-k-c0x00ffffff-no-rj">
-                <span>Argentina Programa</span>
+                <span class="font"> Argentina Programa</span>
             </a></li>
-            <li><a href="#" class="foto2">
+            <li><a href="#">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwSUnXuBrXYaymb1pSVT7NCZ8Sn2f9Xmue4OjU5P-bHfB6eJXmRAuqLSQmSzs7FXpiYpg&usqp=CAU">
-                <span>UNLaR</span>
+                <span class="font"> UNLaR</span>
             </a></li>
         </ul>
     </div>
@@ -42,5 +48,18 @@
         <button type="button" class="btn btn-light">Mas</button>
     </div>
 </div>
+<div class="mat-card" id="second-card">
+        <h2 class="title">Acerca de</h2>
+        <span id="about-text">22 years old, architecture student at the National University of La Rioja and jr full stack web programming in Argentina Programa</span>
+        <div id="edit-2" onclick="cambiar_about()"><span><a href="#"><i class="fa-solid fa-pen"></i></a></span></div>
+</div>
+<div class="mat-card" id="third-card">
+    <h2 class="title">Experiencia</h2>
+    <span id="about-text">22 years old, architecture student at the National University of La Rioja and jr full stack web programming in Argentina Programa</span>
+    <div id="edit-2" onclick="cambiar_about()"><span><a href="#"><i class="fa-solid fa-pen"></i></a></span></div>
+</div>
+<script>
+    
+</script>
 </body>
 </html>
