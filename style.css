@@ -1,120 +1,153 @@
-.mat-card {
-    background: #fffffff6;
-    border: 3px solid #ff9736f6;
-    border-radius: 20px 20px 20px 20px;
-    margin: 1px 1px;
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #d6a401;
     padding: 5px;
 }
-div#profile-background {
-    display: flex;
-    z-index: 1;
+header div span#page-name {
+    color: black;
+    position: fixed;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
 }
-div#profile-background img {
+header div span#redirect {
+    color: black;
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 1150px;
+}
+header div button {
+    margin-left: 1250px;
+}
+.mat-card {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px 15px 15px 15px;
+    border-color: #d6a401;
+}
+.mat-card#first-card .profile-background img{
+    margin-top: 50px;
     width: 100%;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 15px 15px 15px 15px;
 }
-.profile-image img{
-    border: 6px solid;
+.mat-card#first-card .profile-image img {
+    border-style: solid;
+    border-width: 5px;
     border-color: #ffffff;
-    display: flex;
     border-radius: 50%;
-    width: 20%;
-    height: auto;
-    margin-top:-170px;
-    z-index: 1;
-    position: absolute;
-    left: 75%;
+    width: 250px;
+    margin-top: -150px;
+    margin-left: 3%;
 }
-i.fa-solid {
-    color: #000000;
-    margin-left: 94%;
-    margin-top: -3px;
+.mat-card#first-card div#icon-edit1 {
+    color: black;
+    margin-left: 250px;
+    margin-top: -30px;
 }
-div#info-actions {
-    display: flex;
-}
-.name {font-family: "Arial Black", Times, serif;
+.mat-card#first-card .info h1#full-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: 700;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
+    margin-left: 5px;
+    margin-top: 5px;
 }
-div#info-company {
-    font-family: "Arial", Helvetica, sans-serif;
+.mat-card#first-card .info h2#arg {
+    color: #535353;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #4b4b4b;
-    font-weight: 700;
-    text-decoration: none solid rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-    margin-top: 1px;
+    margin-left: 5px;
 }
-div#info-contact {
-    font-family: "Arial", Helvetica, sans-serif;
-    font-size: 9px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #4b4b4b;
-    font-weight: 700;
-    text-decoration: none solid rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
+.mat-card#first-card .info span#location {
+    color: #535353;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.first-list ul#list-left {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    margin-left: 70%;
+    margin-top: -170px;
+}
+.first-list ul#list-left li a {
+    color: #535353;
+    text-decoration: none;
+}
+.first-list ul#list-left li a img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+div.info-actions {
+    margin-top: 75px;
+}
+.mat-card#second-card {
     margin-top: 3px;
 }
-div#EP {
-    font-family: Arial, Helvetica, sans-serif;
+.mat-card#second-card h2#about-this {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
-    margin-left: 79%;
-    margin-top: 10px;
+    color: #535353;
+    margin-left: 5px;
 }
-div#info ul#info-details {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    list-style-type: none;
-    margin-left: 74%;
+.mat-card#second-card div#icon-edit2 {
+    margin-left: 97%;
+    margin-top: -30px;
 }
-div#info ul#info-details .font{
-    text-decoration-line: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    color: black;
+.mat-card#second-card span#about-info {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: #535353;
+    margin-left: 5px;
+    margin-top: -200px;
 }
-div#info ul#info-details  img{
-    width: 75px;
-    height: 70px;
-    border-radius: 50%;
+.mat-card#third-card {
+    margin-top: 3px;
+} 
+.mat-card#third-card div .sub-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #535353;
+    margin-left: 5px; 
 }
-div#info-actions {
-    margin-top: -230px;
-    margin-left: 20px;
+.mat-card#third-card div .icon-add {
+    margin-left: 95%;
+    margin-top: -25px;
+}
+.mat-card#third-card div .icon-edit {
+    margin-left: 97%;
+    margin-top: -25px;
+}
+.mat-card#third-card div .icon-trash {
+    margin-left: 97%;
+}
+.mat-card#third-card div .order-list {
+    list-style: none;
+}
+.mat-card#third-card div .order-list li h3{
     position: absolute;
+    margin-left: 10%;
+    margin-top: -200px;
 }
-.title {
-    margin-top: 15px;
-    margin-left: 10px;
-    font-family: "Arial", Helvetica, sans-serif;
-    font-size: 30px;
-    color: black; 
+.mat-card#third-card div .order-list img{
+    margin-bottom: 80px;
+    width: 115px;
+    height: 150px;
 }
-.mat-card#second-card span#about-text {
-    margin-left: 15px;
-    font-family: "Arial", Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;   
-}
-.mat-card#second-card div#edit-2 {
+.mat-card#third-card div .order-list .extra {
     position: absolute;
-    color: #000000;
-    margin-left: 94%;
-    margin-top: -80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #535353;
+    margin-left: 15px; 
+    margin-top: 65px;
+}
+.mat-card#third-card div .order-list .years {
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: #535353;
+    margin-left: 15px; 
+    margin-top: 95px;   
 }
