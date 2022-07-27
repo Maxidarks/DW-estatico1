@@ -1,4 +1,5 @@
 header {
+    z-index: 1;
     width: 100%;
     position: fixed;
     background-color: #d6a401;
@@ -104,6 +105,7 @@ div.info-actions {
 }
 .mat-card#third-card {
     margin-top: 3px;
+    margin-bottom: 3px;
 } 
 .mat-card#third-card div .sub-title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -126,6 +128,7 @@ div.info-actions {
     list-style: none;
 }
 .mat-card#third-card div .order-list li h3{
+    display: block;
     position: absolute;
     margin-left: 10%;
     margin-top: -200px;
