@@ -42,9 +42,12 @@ header div button {
     margin-top: -150px;
     margin-left: 3%;
 }
-.mat-card#first-card div#icon-edit1 {
+.mat-card#first-card button#icon-edit1 {
+    position: absolute;
+    border-radius: 50%;
+    border-style: none;
     color: black;
-    margin-left: 250px;
+    margin-left: 260px;
     margin-top: -30px;
 }
 .mat-card#first-card .info h1#full-name {
@@ -89,10 +92,15 @@ div.info-actions {
 .mat-card#second-card h2#about-this {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
-    color: #535353;
+    color: #000000;
     margin-left: 5px;
 }
-.mat-card#second-card div#icon-edit2 {
+.mat-card#second-card button#icon-edit2 {
+    position: absolute;
+    border-style: none;
+    border-radius: 50%;
+    color: black;
+    background-color: #d6a401;
     margin-left: 97%;
     margin-top: -30px;
 }
@@ -110,21 +118,39 @@ div.info-actions {
 .mat-card#third-card div .sub-title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
-    color: #535353;
+    color: #000000;
     margin-left: 5px; 
 }
 .mat-card#third-card div .icon-add {
-    margin-left: 95%;
-    margin-top: -25px;
+    position: absolute;
+    border-style: none;
+    border-radius: 50%;
+    color: black;
+    background-color: #d6a401;
+    margin-left: 91%;
+    margin-top: -35px;
 }
 .mat-card#third-card div .icon-edit {
-    margin-left: 97%;
-    margin-top: -25px;
+    position: absolute;
+    border-style: none;
+    border-radius: 50%;
+    color: black;
+    background-color: #d6a401;
+    margin-left: 94%;
+    margin-top: -35px;
 }
 .mat-card#third-card div .icon-trash {
+    position: absolute;
+    border-style: none;
+    border-radius: 50%;
+    color: black;
+    background-color: #d6a401;
     margin-left: 97%;
+    margin-top: -35px;
+
 }
 .mat-card#third-card div .order-list {
+    margin-top: 30px;
     list-style: none;
 }
 .mat-card#third-card div .order-list li h3{
@@ -153,4 +179,13 @@ div.info-actions {
     color: #535353;
     margin-left: 15px; 
     margin-top: 95px;   
+}
+.mat-card#third-card div .order-list button {
+    position: absolute;
+    border-style: none;
+    border-radius: 50%;
+    color: black;
+    background-color: #d6a401;
+    margin-left: 86%;
+    margin-top: 5px;
 }
