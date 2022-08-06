@@ -1,191 +1,117 @@
-header {
-    z-index: 1;
-    width: 100%;
-    position: fixed;
-    background-color: #d6a401;
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #F0EBE3;
+    box-sizing: border-box;
+}
+.nav {
+    background-color: #E4DCCF;
+}
+.nav__responsive-logoapp {
+    display: none;
+    margin: 10px;
     padding: 5px;
+    width: 7em;
 }
-header div span#page-name {
-    color: black;
-    position: fixed;
-    margin-left: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-}
-header div span#redirect {
-    color: black;
-    position: fixed;
-    margin-top: 5px;
-    margin-left: 1150px;
-}
-header div button {
-    margin-left: 1250px;
-}
-.mat-card {
-    padding: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 15px 15px 15px 15px;
-    border-color: #d6a401;
-}
-.mat-card#first-card .profile-background img{
-    margin-top: 50px;
-    width: 100%;
-    border-radius: 15px 15px 15px 15px;
-}
-.mat-card#first-card .profile-image img {
-    border-style: solid;
-    border-width: 5px;
-    border-color: #ffffff;
-    border-radius: 50%;
-    width: 250px;
-    margin-top: -150px;
-    margin-left: 3%;
-}
-.mat-card#first-card button#icon-edit1 {
-    position: absolute;
-    border-radius: 50%;
-    border-style: none;
-    color: black;
-    margin-left: 260px;
-    margin-top: -30px;
-}
-.mat-card#first-card .info h1#full-name {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.nav__responsive-nameapp {
+    display: none;
     font-size: 30px;
-    margin-left: 5px;
-    margin-top: 5px;
+    margin: 5px;
+    padding: 5px;
+    color: black;
 }
-.mat-card#first-card .info h2#arg {
-    color: #535353;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    margin-left: 5px;
-}
-.mat-card#first-card .info span#location {
-    color: #535353;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    margin-left: 5px;
-}
-.first-list ul#list-left {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.nav__responsive-ul {
+    display: none;
     list-style: none;
-    margin-left: 70%;
-    margin-top: -170px;
+    margin-top: 400px;
+    margin: 5px;
+    padding: 5px;
 }
-.first-list ul#list-left li a {
-    color: #535353;
+.nav__responsive-btnlg {
+    display: none;
+    box-sizing: content-box;
+}
+.nav__responsive-user {
+    padding: 5px;
+    margin: 5px;
+    font-size: 50px;
+    border-style: none;
+    color: #576F72;
+    background-color: #E4DCCF;
+}
+
+.nav__logoapp {
+    padding: 5px;
+    margin: 10px;
+    width: 5em;
+}
+.nav__nameapp {
+    display: inline-block;
+    color: black;
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 15px;
+}
+.nav__nameapp:hover {
+    color: #576F72;
+    transition: all .8s;
+}
+.nav__ul {
+    display: inline-block;
+    margin: 10px;
+}
+.nav__ul-icon {
+    display: inline-block;
+    margin: 10px
+}
+.nav__ul-icon a {
+    box-sizing: content-box;
+    color: black;
     text-decoration: none;
 }
-.first-list ul#list-left li a img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+.nav__ul-icon:hover > a {
+    color: #576F72;
+    transition: all .8s;
 }
-div.info-actions {
-    margin-top: 75px;
+.nav__ul-icon i {
+    box-sizing: border-box;
 }
-.mat-card#second-card {
-    margin-top: 3px;
+.nav__btnlg {
+    
 }
-.mat-card#second-card h2#about-this {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    color: #000000;
-    margin-left: 5px;
-}
-.mat-card#second-card button#icon-edit2 {
-    position: absolute;
-    border-style: none;
-    border-radius: 50%;
-    color: black;
-    background-color: #d6a401;
-    margin-left: 97%;
-    margin-top: -30px;
-}
-.mat-card#second-card span#about-info {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    color: #535353;
-    margin-left: 5px;
-    margin-top: -200px;
-}
-.mat-card#third-card {
-    margin-top: 3px;
-    margin-bottom: 3px;
-} 
-.mat-card#third-card div .sub-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    color: #000000;
-    margin-left: 5px; 
-}
-.mat-card#third-card div .icon-add {
-    position: absolute;
-    border-style: none;
-    border-radius: 50%;
-    color: black;
-    background-color: #d6a401;
-    margin-left: 91%;
-    margin-top: -35px;
-}
-.mat-card#third-card div .icon-edit {
-    position: absolute;
-    border-style: none;
-    border-radius: 50%;
-    color: black;
-    background-color: #d6a401;
-    margin-left: 94%;
-    margin-top: -35px;
-}
-.mat-card#third-card div .icon-trash {
-    position: absolute;
-    border-style: none;
-    border-radius: 50%;
-    color: black;
-    background-color: #d6a401;
-    margin-left: 97%;
-    margin-top: -35px;
 
-}
-.mat-card#third-card div .order-list {
-    margin-top: 30px;
-    list-style: none;
-}
-.mat-card#third-card div .order-list li h3{
-    display: block;
-    position: absolute;
-    margin-left: 10%;
-    margin-top: -200px;
-}
-.mat-card#third-card div .order-list img{
-    margin-bottom: 80px;
-    width: 115px;
-    height: 150px;
-}
-.mat-card#third-card div .order-list .extra {
-    position: absolute;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    color: #535353;
-    margin-left: 15px; 
-    margin-top: 65px;
-}
-.mat-card#third-card div .order-list .years {
-    position: absolute;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    color: #535353;
-    margin-left: 15px; 
-    margin-top: 95px;   
-}
-.mat-card#third-card div .order-list button {
-    position: absolute;
-    border-style: none;
-    border-radius: 50%;
-    color: black;
-    background-color: #d6a401;
-    margin-left: 86%;
-    margin-top: 5px;
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
+    .nav__logoapp {
+        display: none;
+    }
+    .nav__responsive-logoapp {
+        display: block;
+    }
+    .nav__nameapp {
+        display: none;
+    }
+    .nav__responsive-nameapp {
+        display: block;
+    }
+    .nav__ul {
+        display: none;
+    }
+    .nav__responsive-ul {
+        display: flex;
+    }
+    .nav__btnlg {
+        display: none;
+    }
+    .nav__responsive-btnlg {
+        display: block;
+    }
 }
